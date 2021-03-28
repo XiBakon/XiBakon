@@ -1,1 +1,7 @@
 /node_modules
+.github
+.vs
+.firebase
+firebase.json
+.firebaserc
+alnx.sqlite
