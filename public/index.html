@@ -1,89 +1,131 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+	<head>
+		<title>XiBakon Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" sizes="32x32" href="public/images/favicon.ico">
+		<link rel="stylesheet" href="public/css/main.css" />
+		<noscript><link rel="stylesheet" href="public/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.1/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#work" class="icon  fa-folder"><span>Work</span></a>
+						<a href="#contact" class="icon  fas fa-envelope"><span>Contact</span></a>
+						<a href="https://twitter.com/Real_XiBakon" target="_blank" class="icon brands fa-twitter"><span>Twitter</span></a>
+					</nav>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+				<!-- Main -->
+					<div id="main">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+						<!-- Me -->
+							<article id="home" class="panel intro" style="background-color: #181a1b;">
+								<header>
+									<h1>XiBakon</h1>
+									<p>Intermediate Game Developer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right" style="background-color: #181a1b;"><span>See my work</span></span>
+									<img src="public/images/me.jpeg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="work" class="panel" style="background-color: #181a1b;">
+								<header>
+									<h2 style="color: white;">Work</h2>
+								</header>
+								<p style="color: white;">
+									Here lies a showcase of all my work.
+                                    Notice: some of this stuff may not work or is in a beta build.
+								</p>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ghostrainstudios.herokuapp.com/" target="_blank" class="image fit"><img src="public/images/studio.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ghostrainstudios.herokuapp.com/sooner-series" target="_blank" class="image fit"><img src="public/images/launcher.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ghostrainstudios.herokuapp.com/sooner-series" target="_blank" class="image fit"><img src="public/images/project.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ghostrainstudios.herokuapp.com/sooner-series" target="_blank" class="image fit"><img src="public/images/jet.png" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://ghostrainstudios.herokuapp.com/sooner-series" target="_blank" class="image fit"><img src="public/images/stw.png" alt=""></a>
+										</div>
+										<!--<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic06.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic07.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic08.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic09.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic10.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic11.jpg" alt=""></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="#" target="_blank" class="image fit"><img src="public/images/pic12.jpg" alt=""></a>
+										</div>-->
+									</div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel" style="background-color: #181a1b;">
+								<header>
+									<h2 style="color: white;">Contact Me</h2>
+								</header>
+								<div class="col-4 col-6-medium col-12-small">
+									<h4 style="color: white;">Discord</h4>
+									<p style="color: white;">Join my <a href="https://discord.gg/U8BAP3FngW" style="text-decoration: none; color: rgb(167, 167, 167);">discord</a> and message XiBakon for contact.</p>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<h4 style="color: white;">Twitter</h4>
+									<p style="color: white;">Follow me on <a href="https://twitter.com/Real_XiBakon" style="text-decoration: none; color: rgb(167, 167, 167);">twitter</a> to contact me.</p>
+								</div>
+								<div class="col-4 col-6-medium col-12-small">
+									<h4 style="color: white;">Email</h4>
+									<p style="color: white;">Reach out to my <a href="mailto:yeahnoxibakon@gmail.com" style="text-decoration: none; color: rgb(167, 167, 167);">email</a> for contact through there.</p>
+								</div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; XiBakon.</li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="public/js/jquery.min.js"></script>
+			<script src="public/js/browser.min.js"></script>
+			<script src="public/js/breakpoints.min.js"></script>
+			<script src="public/js/util.js"></script>
+			<script src="public/js/main.js"></script>
+			<script src="/__/firebase/8.3.1/firebase-app.js"></script>
+			<script src="/__/firebase/8.3.1/firebase-analytics.js"></script>
+			<script src="/__/firebase/init.js"></script>
+
+	</body>
 </html>
